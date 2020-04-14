@@ -16,7 +16,6 @@ def calculate_wabbits(months, litters_in_pairs):
             # Modified fibonacci sequence, taking the pairs of rabbits two months ago, multiplied by litters_in_pairs
             total_rabbit_pairs = total_rabbit_pairs_list[month - 1] + (total_rabbit_pairs_list[month - 2] * litters_in_pairs)
             total_rabbit_pairs_list.append(total_rabbit_pairs)
-            print(total_rabbit_pairs_list)
     return total_rabbit_pairs_list[months[-1]]
 
 
